@@ -1,0 +1,48 @@
+/* ==========================================================================
+       2) UX RESEARCH SECTION
+       ========================================================================== */
+       .research-section {
+        position: relative;
+        background-color: #7daaa6;
+        color: #fff;
+        padding: 120px 20px;
+        overflow: hidden;
+      }
+      .research-section::before {
+        content: "UX Research";
+        position: absolute;
+        top: 20px; left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Anton', sans-serif;
+        font-size: 140px; font-weight: 800;
+        color: rgba(255,255,255,0.2);
+        pointer-events: none; z-index: 0;
+        white-space: nowrap;
+      }
+      .research-content {
+        position: relative; z-index: 1;
+        max-width: 800px; margin: 0 auto; text-align: left;
+      }
+      .research-content .overlay-title {
+        font-family: 'Artifact', cursive;
+        font-size: 80px; line-height:1; margin-bottom:20px;
+        color: #fff;
+      }
+      .research-content .headline {
+        font-size: 28px; font-weight:700; margin-bottom:20px;
+        line-height:1.3; color: #fff;
+      }
+      .research-content p {
+        font-size:18px; line-height:1.6; margin-bottom:20px;
+        color: #f1f4f3;
+      }
+      .research-content .cta-btn {
+        display:inline-block; background:#f1f4f3; color:#7daaa6;
+        padding:12px 24px; border-radius:999px; text-decoration:none;
+        font-size:18px; font-weight:400;
+      }
+      @media (max-width: 600px) {
+        .research-section::before { font-size:80px; top:10px; }
+        .research-content .overlay-title { font-size:48px; }
+        .research-content .headline { font-size:24px; }
+      }

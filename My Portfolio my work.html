@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riddhi Vaze - Home</title>
+  <link rel="stylesheet" href="Mywork.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">R.</h1>
+      <nav>
+        <a href="main.html">Home</a>
+        <a href="#about-me-section-id">About Me</a>
+        <a href="Riddhi Resume.html">Resume</a>
+        <a href="My Portfolio my work.html" class="active" >My Works</a>
+        <a href="#contact-me-section-id">Contact Me</a>
+      </nav>
+      <div class="location-date">
+        <strong>PUNE, INDIA</strong> | 12 Dec 2024
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Selected works</h2>
+    <div class="tags">
+      <button>UX DESIGNER</button>
+      <button>GRAPHIC DESIGNER</button>
+      <button>ARCHITECT</button>
+      <button class="date-btn">Selected Works 2019-2024</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">UX Design</h2>
+    
+    <div class="cards">
+      <div class="card">
+        <img src="images/b-2.png.png" alt="FanFit App">
+        <h3>FanFit - Mobile App UX</h3>
+        <p class="status">Ongoing</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card"> 
+        <img src="Images/Socialink.png" alt="The SociaLink App">
+        <h3>The SociaLink - Mobile App UX</h3>
+        <p class="status">Ongoing</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+        <a href="SocialLink.html">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Graphic Design</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/b-2.pngRise 2 peaks.png" alt="Rise to Peaks">
+        <h3>Rise to Peaks - A business Consultancy</h3>
+        <p>The "Rise to Peaks" project focused on crafting a compelling visual identity that embodies ambition, growth, and success.</p>
+        <a href="Rise to peaks.html">Read More</a>
+      </div>
+      <div class="card">
+        <img src="images/b-2.pngSwarnamalya.png" alt="Swarnamalya Jewellery">
+        <h3>Swarnamalya Jewellery - An elegant sparkle in Akkalkot</h3>
+        <p>Swarnamalya is a premium jewelry brand rooted in tradition yet designed for modern sophistication.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <img src="images/b-2.pngAarohi.png" alt="Aarohi Tours">
+        <h3>Aarohi Tours and travels - A Journey within</h3>
+        <p>Aarohi Tours and Travels is a travel brand dedicated to crafting unforgettable journeys for wanderlust enthusiasts.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Architecture</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/b-2.pngThesis.png" alt="Sahavaas Thesis">
+        <h3>Architecture Thesis - Sahavaas: Intergenerational Living</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <img src="images/b-2.png4th year.png" alt="Urban Insert">
+        <h3>Urban Insert - Women’s Opportunity Centre</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <img src="images/b-2.pngAyodhya.png" alt="Ayodhya School">
+        <h3>Ayodhya Educational Trust CBSE School</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-socials">
+      <img src="images/brand-icons/Group 9dd.png" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/riddhivaze?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/brand-icons/Group 10dd.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/riddhi_vaze?igsh=ajlxMTQzZ2swOXo4&utm_source=qr"><img src="images/brand-icons/Group 8dd.png" alt="Instagram"></a>
+      <a href="https://www.behance.net/riddhivaze12"><img src="images/brand-icons/Group 12dd.png" alt="Behance"></a>
+      <img src="images/brand-icons/Group 12dd.png" alt="Dribbble"></a>
+    </div>
+    <div class="footer-contact">
+      <p>vaze.riddhi12@gmail.com<br>+91 9921260262</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      const [uxBtn, graphicBtn, archBtn, allBtn] =
+        Array.from(document.querySelectorAll('.tags button'));
+
+     
+      const [uxSection, graphicSection, archSection] =
+        document.querySelectorAll('section.section');
+
+      
+      function showAll() {
+        [uxSection, graphicSection, archSection]
+          .forEach(sec => sec.style.display = 'block');
+      }
+
+     
+      function showOnly(section) {
+        [uxSection, graphicSection, archSection]
+          .forEach(sec => sec.style.display = sec === section ? 'block' : 'none');
+      }
+
+     
+      showAll();
+
+     
+      uxBtn.addEventListener('click',    () => showOnly(uxSection));
+      graphicBtn.addEventListener('click', () => showOnly(graphicSection));
+      archBtn.addEventListener('click',   () => showOnly(archSection));
+      allBtn.addEventListener('click',    () => showAll());
+    });
+  </script>
+</body>
+
+</html>

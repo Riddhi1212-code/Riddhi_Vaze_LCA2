@@ -1,0 +1,171 @@
+
+    /* ==========================================================================
+       4) CONTACT ME SECTION
+       ========================================================================== */
+       .contact-section {
+        position: relative;
+        background: #7daaa6;
+        color: #fff;
+        padding: 260px 60px 140px;
+        overflow: hidden;
+      }
+      .contact-section::before {
+        content:"Contact Me";
+        position:absolute;
+        top:20px; left:50%;
+        transform:translateX(-50%);
+        font-family:'Anton',sans-serif;
+        font-size:140px; font-weight:800;
+        color:rgba(255,255,255,0.15);
+        pointer-events:none; z-index:0;
+        white-space:nowrap;
+      }
+      .contact-section .overlay-title {
+        position:absolute;
+        top:10%; left:50%;
+        transform:translateX(-50%);
+        font-family:'Artifact',cursive;
+        font-size:80px; color:#fff;
+        z-index:1; white-space:nowrap;
+      }
+      .contact-section .contact-content {
+        position:relative; z-index:1;
+        display:flex; gap:120px;
+        max-width:1000px; margin:0 auto;
+        align-items:flex-start;
+      }
+      .contact-section .contact-left {
+        flex:1;
+      }
+      .contact-section .contact-left h2 {
+        font-size:36px; font-weight:800; margin-bottom:24px;
+      }
+      .contact-section .contact-left p {
+        font-size:16px; line-height:1.6; margin-bottom:32px;
+      }
+      .contact-section .contact-left .thanks {
+        font-size:18px; font-weight:700; margin-bottom:60px;
+      }
+      .contact-section .contact-form {
+        flex:1; max-width:500px;
+      }
+      .contact-section .contact-form label {
+        display:block; font-size:14px; margin-bottom:10px;
+      }
+      .contact-section .contact-form input,
+      .contact-section .contact-form textarea {
+        width:100%; padding:16px 24px;
+        border:1px solid #fff; border-radius:24px;
+        background:transparent; color:#fff;
+        font-size:16px; margin-bottom:32px; resize:vertical;
+      }
+      .contact-section .contact-form textarea {
+        height:160px;
+      }
+      .contact-section .contact-form button {
+        background:#fff; color:#7daaa6;
+        padding:16px 40px; border:none;
+        border-radius:24px; font-size:16px;
+        font-weight:500; cursor:pointer;
+      }
+      .contact-section .social-icons {
+        position:absolute; bottom:60px; left:15%;
+        display:flex; gap:24px; z-index:1;
+      }
+      .contact-section .social-icons img {
+        width:40px; height:40px;
+      }
+      .contact-section .contact-details {
+        position:absolute; bottom:60px; right:60px;
+        text-align:right; font-size:16px;
+        line-height:1.6; z-index:1;
+      }
+      @media (max-width:900px) {
+        .contact-section { padding:220px 20px 100px; }
+        .contact-section .overlay-title {
+          font-size:64px; top:10px;
+        }
+        .contact-section .contact-content {
+          flex-direction:column; gap:60px;
+        }
+        .contact-section .contact-left h2 {
+          margin-bottom:20px;
+        }
+        .contact-section .contact-left p {
+          margin-bottom:24px;
+        }
+        .contact-section .contact-left .thanks {
+          margin-bottom:40px;
+        }
+        .contact-section .contact-form input,
+        .contact-section .contact-form textarea {
+          margin-bottom:24px;
+        }
+        .contact-section .contact-form button {
+          padding:14px 32px;
+        }
+        .contact-section .social-icons {
+          bottom:20px; left:20px; gap:16px;
+        }
+        .contact-section .contact-details {
+          bottom:20px; right:20px; font-size:14px;
+        }
+      }
+
+      /* Ensure the contact section is the positioning context */
+.contact-section {
+    position: relative;
+    padding-bottom: 6rem; /* enough space for the box */
+  }
+  
+  /* Base box styling */
+  #status-box {
+    position: absolute;
+    bottom: 2rem;           /* distance from the bottom of .contact-section */
+    left: 50%;              /* center horizontally */
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 600px;
+    width: 90%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    /* start hidden—JS will add the .show class */
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  /* Visible state */
+  #status-box.show {
+    /* nothing extra needed—animation takes care of opacity & translate */
+  }
+  
+  /* Success variant */
+  #status-box.success {
+    background: #e8f5e9;
+    border-left: 5px solid #27ae60;
+    color: #2f7a3e;
+  }
+  
+  /* Error variant */
+  #status-box.error {
+    background: #fdecea;
+    border-left: 5px solid #e74c3c;
+    color: #7a2f2f;
+  }
+  

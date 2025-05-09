@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riddhi Portfolio</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="css/sections/about_me.css" rel="stylesheet">
+  <link href="css/sections/ux_research.css" rel="stylesheet">
+    <link href="css/sections/my_skills.css" rel="stylesheet">
+    <link href="css/sections/contact_me.css" rel="stylesheet">
+    <link href="css/sections/portfolio.css" rel="stylesheet">
+    <link href="css/sections/body.css" rel="stylesheet">
+    <link href="css/sections/home_page.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<div id="splash">
+  <img id="splashImg1" src="images/Splash Screen-1.png" alt="" style="display:none; max-width:80%;">
+  <img id="splashImg2" src="images/Splash Screen.png" alt="" style="display:none; max-width:80%;">
+</div>
+
+<script>
+  function startbefore() {
+    const splash = document.getElementById('splash');
+    Object.assign(splash.style, {
+      position: 'fixed',
+      top: 0, left: 0,
+      width: '100%', height: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: '#6FA7A6',
+      zIndex: 9999
+    });
+
+    const imgEls = [
+      document.getElementById('splashImg1'),
+      document.getElementById('splashImg2')
+    ];
+
+    const DURATION = 2000;  
+    let idx = 0;
+
+    function flash() {
+      
+      imgEls.forEach((img, i) => {
+        img.style.display = (i === idx ? 'block' : 'none');
+      });
+
+     
+      if (idx < imgEls.length - 1) {
+        idx++;
+        setTimeout(flash, DURATION);
+      } else {
+        
+        setTimeout(() => splash.remove(), DURATION);
+      }
+    }
+
+    flash();
+  }
+
+  document.addEventListener('DOMContentLoaded', startbefore);
+</script>
+
+<header>
+  <div class="container">
+    <h1 class="logo">R.</h1>
+    <nav>
+      <a href="main.html"class="active">Home</a>
+      <a href="#about-me-section-id">About Me</a>
+      <a href="Riddhi Resume.html">Resume</a>
+      <a href="My Portfolio my work.html" >My Works</a>
+      <a href="#contact-me-section-id">Contact Me</a>
+    </nav>
+    <div class="location-date">
+      <strong>PUNE, INDIA</strong> | 12 Dec 2024
+    </div>
+  </div>
+</header>
+    
+      <section class="hero">
+        <div class="hero-content">
+          <h1>design<br>dialogues</h1>
+          <p>As an architect, I mastered spatial experiences and functionality, giving me a unique edge in designing user-centered digital spaces as a UX Designer.</p>
+          <hr>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">29+</div>
+              <div class="stat-label">projects completed by creating visual narratives for brands</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">1.7k+</div>
+              <div class="stat-label">hours spent working on client and passion projects to hone creativity</div>
+            </div>
+          </div>
+          <div class="roles">
+            <span class="role">UX DESIGNER</span>
+            <span class="role">GRAPHIC DESIGNER</span>
+            <span class="role">ARCHITECT</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/riddhi/RiddhiHomePageFrame.png" alt="Riddhi Vaze portrait and shape graphic">
+        </div>
+      </section>
+    
+      <section class="portfolio-section">
+        <div class="portfolio-header">
+          <h2 class="title">
+            <span class="title-bg">portfolio</span>
+            <span class="title-fg">portfolio</span>
+          </h2>
+          <div class="buttons">
+            <button class="outline-btn">Selected Works 2019-2024</button>
+            <button class="filled-btn">See all work
+              <a href="My Portfolio my work.html" ></a>
+            </button>
+          </div>
+        </div>
+    
+        <div class="cards-container">
+        
+          <div class="card">
+            <img src="images/works/RiseToPeaks.png" alt="Rise to Peaks">
+            <div class="card-content">
+              <h3>Rise to Peaks - A business Consultancy</h3>
+              <p>The "Rise to Peaks" project focused on crafting a compelling visual identity that embodies ambition, growth, and success.</p>
+              <a href="Rise to peaks.html">Read More</a>
+            </div>
+          </div>
+    
+          
+          <div class="card">
+            <img src="images/works/Thesis.png" alt="Sahavaas: Intergenerational Living">
+            <div class="card-content">
+              <h3>Architecture Thesis - Sahavaas: Intergenerational Living</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+    
+          
+          <div class="card">
+            <img src="images/works/Socialink.png" alt="The SociaLink - Mobile App UX">
+            <div class="card-content">
+              <h3>The SociaLink - Mobile App UX</h3>
+              <p class="status ongoing">Ongoing</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+  
+  <section class="about-section" id="about-me-section-id">
+    <div class="about-image">
+      <img src="images/riddhi/RiddhiPortrait.jpg" alt="Your Portrait">
+    </div>
+    <div class="about-content">
+      <h2 class="overlay-title">About me</h2>
+      <p>
+        As a UX Designer with a background in architecture and graphic design, I bring a
+        unique perspective to crafting digital experiences. My journey began in physical
+        spaces, where I learned the importance of functionality and user interaction, and
+        in graphic design, where I developed an eye for visual aesthetics. Now, I apply
+        that expertise to the digital realm, creating intuitive, visually compelling
+        designs that solve real problems. I’m passionate about blending creativity with
+        logic to enhance user experiences and continually explore new ways to make
+        technology more accessible and engaging.
+      </p>
+      <ul class="skills">
+        <li>Graphic design</li>
+        <li>UI Design</li>
+        <li>Brand Identity</li>
+        <li>Architecture</li>
+        <li>UX Research</li>
+        <li>3D Visualisation</li>
+      </ul>
+    </section>
+
+  
+  <section class="research-section">
+    <div class="research-content">
+      <h2 class="overlay-title">UX Research</h2>
+      <h3 class="headline">
+        OTT Binge Watching Phenomenon in Generation Z :<br/>
+        Design Responsibility and Dark Patterns in UX
+      </h3>
+      <p>
+        Current practices in the field of user experience of OTT Platforms suggest that
+        a lot of dark patterns exist in the design for increased engagement which
+        significantly affect the productivity of generation Z who are the most avid
+        users of the platforms.
+      </p>
+      <p>
+        The purpose of this research is to explore how UX design, especially dark
+        patterns, influences the binge-watching habits of Generation Z on OTT platforms,
+        while examining the ethical responsibilities of designers in creating
+        user-friendly and responsible interfaces.
+      </p>
+      <a href="#" class="cta-btn">Read the Research Paper</a>
+    </div>
+  </section>
+
+  
+  <section class="skills-section" id="my-skills-section-id">
+    <span class="skills-tag">My life in a laptop</span>
+    <h2 class="overlay-title">My skills</h2>
+    <div class="stats-grid">
+      <div>
+        <div class="stat-number">5<span class="plus">+</span></div>
+        <p class="stat-desc">years of experience<br/>in architecture and design</p>
+      </div>
+      <div>
+        <div class="stat-number">8<span class="plus">+</span></div>
+        <p class="stat-desc">verticals of design<br/>explored with many more ongoing</p>
+      </div>
+      <div>
+        <div class="stat-number">29<span class="plus">+</span></div>
+        <p class="stat-desc">projects completed by<br/>creating visual narratives for brands</p>
+      </div>
+      <div>
+        <div class="stat-number">1.7k<span class="plus">+</span></div>
+        <p class="stat-desc">Hours spent working on<br/>client & passion projects</p>
+      </div>
+    </div>
+    <p class="skills-intro">
+      I bring creativity, empathy, and problem-solving to my designs. With strong
+      collaboration, adaptability, and attention to detail, I create intuitive,
+      user-centered experiences that balance functionality and aesthetics.
+    </p>
+   </section>
+  
+  <section class="contact-section" id ="contact-me-section-id">
+    <h2 class="overlay-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-left">
+            <h2>Lets Get in Touch!</h2>
+            <p>
+              Have a question or need assistance?<br>
+              Reach out via email, phone, or the contact form below. We're eager to assist you.
+            </p>
+            <div class="thanks">Nice hearing from you!</div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="full-name">Full Name:</label>
+            <input id="full-name" type="text" placeholder="John Beck" />
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="johnbeck@gmail.com" />
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Hello! How can I help You?"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div id="status-box" class="status-box">
+            <span id="status-icon"></span>
+            <span id="status-text"></span>
+          </div>
+
+    </div>
+    <div class="footer-socials">
+      <img src="images/brand-icons/Group 9dd.png" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/riddhivaze?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/brand-icons/Group 10dd.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/riddhi_vaze?igsh=ajlxMTQzZ2swOXo4&utm_source=qr"><img src="images/brand-icons/Group 8dd.png" alt="Instagram"></a>
+      <a href="https://www.behance.net/riddhivaze12"><img src="images/brand-icons/Group 12dd.png" alt="Behance"></a>
+      <img src="images/brand-icons/Group 12dd.png" alt="Dribbble"></a>
+    </div>
+    <div class="contact-details">
+      <div>vaze.riddhi12@gmail.com</div>
+      <div>+91 9921260262</div>
+    </div>
+  </section>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

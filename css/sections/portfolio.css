@@ -1,0 +1,142 @@
+
+
+.portfolio-section {
+    padding: 4rem;
+    background-color: #61a4a4;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+    
+  }
+  .portfolio-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    align-content: center;
+  }
+  .title {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: rgba(255,255,255,0.2);
+    line-height: 1;
+    
+  }
+  .title-bg {
+    font-family: 'Anton', sans-serif;
+    padding: 2rem;
+  }
+  .title-fg {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-family: 'Artifact', cursive;
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 2rem;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .outline-btn,
+  .filled-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'montserrat', sans-serif;
+  }
+  .outline-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .filled-btn {
+    background: #fff;
+    border: none;
+    color: #66b2a0;
+  }
+
+  .filled-btn :hover {
+    background:#61a4a4;
+    color:#fff;
+    scale: 0.1;
+  }
+  
+  .cards-container {
+    max-width: 1200px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 640px) {
+    .cards-container { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .cards-container { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  
+  .card {
+  
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .card img {
+    width: 80%;
+    height: auto;
+    padding: 3%;
+    border-radius: 1.3rem;
+
+  }
+  .card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'montserrat', sans-serif;
+  }
+  .card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-family: 'montserrat', sans-serif;
+  }
+  .status.ongoing {
+    font-size: 0.85rem;
+    color: #4CAF50;
+    margin-bottom: 0.75rem;
+    font-family: 'montserrat', sans-serif;
+  }
+  .card-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+  }
+  .card-content a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #66b2a0;
+    font-weight: 500;
+    margin-top: auto;
+    font-family: 'montserrat', sans-serif;
+  }

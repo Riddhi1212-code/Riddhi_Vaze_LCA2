@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    margin: 1 2rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  padding-right: 0.5rem;
+  }
+  
+  nav a.active {
+    color: #61a4a4;
+    font-weight: 550;
+  }
+  
+  .location-date {
+    font-size: 0.85rem;
+    color: #444;
+  }
+
+  .breadcrumb {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 0.9rem;
+    color: #666;
+    
+  }
+  .title {
+    padding-left: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    color: #61a4a4;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+  }
+  .section-container {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+  }
+  .left-box, .right-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  .left-box {
+    flex: 2;
+    min-width: 280px;
+  }
+  .right-box {
+    flex: 1;
+    min-width: 220px;
+  }
+  .right-box p {
+    margin: 10px 0;
+  }
+  .right-box b {
+    font-weight: 600;
+  }
+
+  .DesignImages img {
+    width:100%;
+    border-radius: 1.3rem;
+  }
+  .contact-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f9f8f5;
+  }
+  .contact-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .contact-section p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  .contact-section a {
+    background-color: #61a4a4;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .contact-section a:hover {
+    background-color: #4b8888;
+  }
+  footer {
+    background-color: #61a4a4;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  .footer-socials a {
+    margin: 0 0.5rem;
+    display: inline-block;
+  }
+  
+  .footer-socials img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-contact p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }

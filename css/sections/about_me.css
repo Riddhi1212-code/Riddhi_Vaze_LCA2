@@ -1,0 +1,112 @@
+/* ==========================================================================
+       1) ABOUT ME SECTION
+       ========================================================================== */
+       .about-section {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 120px 20px 80px;
+        background: #fff;
+      }
+      .about-section::before {
+        content: "About me";
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Anton', sans-serif;
+        font-weight: 800;
+        font-size: 140px;
+        color: #d2dedc;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .about-image {
+        flex: 1; max-width: 450px; z-index: 1;
+      }
+      .about-image img {
+        width: 100%; display: block; filter: grayscale(100%);
+      }
+      .about-content {
+        flex: 1; padding: 0 20px; z-index: 1;
+      }
+      .about-content .overlay-title {
+        font-family: 'Artifact', cursive;
+        font-size: 80px; color: #7daaa6;
+        position: relative; top: -50px; left: 20px;
+        margin-bottom: 40px; z-index: 2;
+      }
+      .about-content p {
+        margin-top: 20px; font-size: 18px; max-width: 600px;
+      }
+      .about-content .skills {
+        list-style: none; margin-top: 20px;
+      }
+      .about-content .skills li {
+        display: inline-block; margin: 5px 8px 0 0;
+        padding: 8px 16px; border: 1px solid #7daaa6;
+        border-radius: 999px; font-weight: 800; font-size: 14px;
+        color: #7daaa6;
+      }
+      @media (max-width: 900px) {
+        .about-section { flex-direction: column; }
+        .about-content { padding: 30px 0 0; text-align: center; }
+      }
+  
+ /* contact.css */
+
+/* 1. Make the wrapper the positioning context */
+.contact-section .contact-content {
+    position: relative;
+    padding-bottom: 6rem; /* leave space for the box */
+  }
+  
+  /* 2. Absolute-position the box at the bottom center */
+  #status-box {
+    position: absolute;
+    bottom: 1.5rem;       /* distance above the bottom of .contact-content */
+    left: 50%;            /* center horizontally */
+    transform: translateX(-50%);
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 600px;
+    width: 90%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    z-index: 10;          /* sit on top of other content */
+  }
+  
+  /* 3. Variants */
+  #status-box.success {
+    background: #e8f5e9;
+    border-left: 5px solid #27ae60;
+    color: #2f7a3e;
+  }
+  #status-box.error {
+    background: #fdecea;
+    border-left: 5px solid #e74c3c;
+    color: #7a2f2f;
+  }
+  
+  /* 4. Fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+
+  
